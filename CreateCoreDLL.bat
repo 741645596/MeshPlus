@@ -9,9 +9,9 @@ cd %~dp0
 
 @set GameSrcPath=%cd%\Assets\Scripts\Core
 
-@set Output=%cd%\OutDll\MeshPlus.Dll
+@set Output=%cd%\OutDll\CustomRender.Dll
 
-@set XmlPath=%cd%\OutDll\MeshPlus.xml
+@set XmlPath=%cd%\OutDll\CustomRender.xml
 
  rem set path=%GameSrcPath%;
 

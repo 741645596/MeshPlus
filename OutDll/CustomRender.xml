@@ -1,0 +1,238 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>CustomRender</name>
+    </assembly>
+    <members>
+        <member name="M:MeshHelp.CalcLinePoint(UnityEngine.Vector3,UnityEngine.Vector3,System.Single,System.Boolean)">
+            <summary>
+            计算线上的另外一个点
+            </summary>
+            <param name="start"></param>
+            <param name="dir"></param>
+            <param name="width"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MeshHelp.Create(RayGraphics.Geometric.Circle2D)">
+            <summary>
+            创建挡格mesh
+            </summary>
+            <param name="info"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MeshHelp.CreateCircleMesh(UnityEngine.Vector3,System.Single)">
+            <summary>
+            创建圆形mesh
+            </summary>
+            <param name="center"></param>
+            <param name="radius"></param>
+            <returns></returns>
+        </member>
+        <member name="M:RayGraphics.Render.GpuInstanceRender.SetMaterial(UnityEngine.Material)">
+            <summary>
+            初始化
+            </summary>
+            <param name="meshMaterial"></param>
+            <returns></returns>
+        </member>
+        <member name="M:RayGraphics.Render.GpuInstanceRender.SetMesh(UnityEngine.Mesh)">
+            <summary>
+            设置mesh
+            </summary>
+            <param name="mesh"></param>
+            <returns></returns>
+        </member>
+        <member name="M:RayGraphics.Render.GpuInstanceRender.AddMesh(UnityEngine.Mesh)">
+            <summary>
+            添加mesh
+            </summary>
+            <param name="mesh"></param>
+            <returns></returns>
+        </member>
+        <member name="M:RayGraphics.Render.GpuInstanceRender.Draw">
+            <summary>
+            绘制
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:RayGraphics.Render.IRender.SetMaterial(UnityEngine.Material)">
+            <summary>
+            设置材质
+            </summary>
+            <param name="mat"></param>
+            <returns></returns>
+        </member>
+        <member name="M:RayGraphics.Render.IRender.SetMesh(UnityEngine.Mesh)">
+            <summary>
+            设置mesh
+            </summary>
+            <param name="mesh"></param>
+            <returns></returns>
+        </member>
+        <member name="M:RayGraphics.Render.IRender.AddMesh(UnityEngine.Mesh)">
+            <summary>
+            添加mesh
+            </summary>
+            <param name="mesh"></param>
+            <returns></returns>
+        </member>
+        <member name="M:RayGraphics.Render.IRender.Draw">
+            <summary>
+            绘制
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:RayGraphics.Render.NormalRender">
+            <summary>
+            普通渲染
+            </summary>
+        </member>
+        <member name="M:RayGraphics.Render.NormalRender.Init(UnityEngine.Material,UnityEngine.Mesh)">
+            <summary>
+            绑定mat，mesh
+            </summary>
+            <param name="mat"></param>
+            <param name="mesh"></param>
+            <returns></returns>
+        </member>
+        <member name="M:RayGraphics.Render.NormalRender.SetMaterial(UnityEngine.Material)">
+            <summary>
+            初始化
+            </summary>
+            <param name="meshMaterial"></param>
+            <returns></returns>
+        </member>
+        <member name="M:RayGraphics.Render.NormalRender.SetMesh(UnityEngine.Mesh)">
+            <summary>
+            设置mesh
+            </summary>
+            <param name="mesh"></param>
+            <returns></returns>
+        </member>
+        <member name="M:RayGraphics.Render.NormalRender.AddMesh(UnityEngine.Mesh)">
+            <summary>
+            添加mesh
+            </summary>
+            <param name="mesh"></param>
+            <returns></returns>
+        </member>
+        <member name="M:RayGraphics.Render.NormalRender.Draw">
+            <summary>
+            绘制
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:RayGraphics.Render.RenderManger.AddRender(RayGraphics.Render.IRender)">
+            <summary>
+            添加渲染
+            </summary>
+            <param name="render"></param>
+        </member>
+        <member name="M:RayGraphics.Render.RenderManger.Remover(RayGraphics.Render.IRender)">
+            <summary>
+            移除渲染
+            </summary>
+            <param name="render"></param>
+        </member>
+        <member name="M:RayGraphics.Render.RenderManger.Clear">
+            <summary>
+            清理渲染
+            </summary>
+        </member>
+        <member name="M:RayGraphics.Render.RenderManger.Draw">
+            <summary>
+            进行绘制
+            </summary>
+        </member>
+        <member name="T:RayGraphics.Render.SameMaterialRender">
+            <summary>
+            普通渲染
+            </summary>
+        </member>
+        <member name="M:RayGraphics.Render.SameMaterialRender.SetMaterial(UnityEngine.Material)">
+            <summary>
+            初始化
+            </summary>
+            <param name="meshMaterial"></param>
+            <returns></returns>
+        </member>
+        <member name="M:RayGraphics.Render.SameMaterialRender.SetMesh(UnityEngine.Mesh)">
+            <summary>
+            设置mesh
+            </summary>
+            <param name="mesh"></param>
+            <returns></returns>
+        </member>
+        <member name="M:RayGraphics.Render.SameMaterialRender.AddMesh(UnityEngine.Mesh)">
+            <summary>
+            添加mesh
+            </summary>
+            <param name="mesh"></param>
+            <returns></returns>
+        </member>
+        <member name="M:RayGraphics.Render.SameMaterialRender.Draw">
+            <summary>
+            绘制
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:RayGraphics.Texture.GridTexture.CreateTexture(System.Int32,System.Int32)">
+            <summary>
+            创建纹理
+            </summary>
+            <param name="width"></param>
+            <param name="height"></param>
+            <returns></returns>
+        </member>
+        <member name="M:RayGraphics.Texture.GridTexture.Release">
+            <summary>
+            释放
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:RayGraphics.Texture.GridTexture.SetPixel(RayGraphics.Math.Short2,System.Boolean)">
+            <summary>
+            设置像素
+            </summary>
+            <param name="pos"></param>
+            <param name="isEnable"></param>
+        </member>
+        <member name="M:RayGraphics.Texture.GridTexture.SetBlock(System.Collections.Generic.List{RayGraphics.Math.Short2})">
+            <summary>
+            设置挡格
+            </summary>
+            <param name="info"></param>
+            <returns></returns>
+        </member>
+        <member name="M:RayGraphics.Texture.GridTexture.Draw">
+            <summary>
+            绘制
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:RayGraphics.Texture.ITexture">
+            <summary>
+            自定义纹理接口
+            </summary>
+        </member>
+        <member name="M:RayGraphics.Texture.ITexture.Release">
+            <summary>
+            释放
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:RayGraphics.Texture.ITexture.CreateTexture(System.Int32,System.Int32)">
+            <summary>
+            创建纹理
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:RayGraphics.Texture.ITexture.SetPixel(RayGraphics.Math.Short2,System.Boolean)">
+            <summary>
+            
+            </summary>
+            <param name="pos"></param>
+            <param name="isEnable"></param>
+        </member>
+    </members>
+</doc>
