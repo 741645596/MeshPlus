@@ -51,7 +51,7 @@ namespace RayGraphics.Render
         /// 绘制
         /// </summary>
         /// <returns></returns>
-        public bool Draw()
+        public bool Render()
         {
             if (!m_targetMaterial || m_listTargetMesh== null)
                 return false;
@@ -60,10 +60,27 @@ namespace RayGraphics.Render
             {
                 if (mesh != null)
                 {
-                    Graphics.DrawMesh(mesh, Vector3.zero, Quaternion.identity, m_targetMaterial, 0);
+                    Graphics.DrawMesh(mesh, Matrix4x4.identity, m_targetMaterial, 0);
                 }
             }
             return true;
+        }
+
+        /// <summary>
+        /// 更新数据
+        /// </summary>
+        /// <param name="matrix"></param>
+        /// <param name="block"></param>
+        public void UpdateInstancedData(Matrix4x4 matrix, MaterialPropertyBlock block)
+        {
+
+        }
+        /// <summary>
+        /// 更新数据
+        /// </summary>
+        public void UpdateInstancedData(List<Matrix4x4> matrixArray, MaterialPropertyBlock block)
+        {
+            
         }
     }
 }

@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System.Collections.Generic;
+using UnityEngine;
 
 namespace RayGraphics.Render
 {
@@ -23,9 +24,18 @@ namespace RayGraphics.Render
         /// <returns></returns>
         bool AddMesh(Mesh mesh);
         /// <summary>
-        /// 绘制
+        /// 渲染
         /// </summary>
         /// <returns></returns>
-        bool Draw();
+        bool Render();
+
+        /// <summary>
+        /// 更新数据
+        /// </summary>
+        void UpdateInstancedData(Matrix4x4 matrix, MaterialPropertyBlock block);
+        /// <summary>
+        /// 更新数据
+        /// </summary>
+        void UpdateInstancedData(List<Matrix4x4> matrixArray, MaterialPropertyBlock block);
     }
 }

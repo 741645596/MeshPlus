@@ -28,6 +28,16 @@
             <param name="radius"></param>
             <returns></returns>
         </member>
+        <member name="F:RayGraphics.Render.GpuInstanceRender.m_propertyBlock">
+            <summary>
+            instance 数据
+            </summary>
+        </member>
+        <member name="F:RayGraphics.Render.GpuInstanceRender.m_matrixArray">
+            <summary>
+            transform相关信息
+            </summary>
+        </member>
         <member name="M:RayGraphics.Render.GpuInstanceRender.SetMaterial(UnityEngine.Material)">
             <summary>
             初始化
@@ -49,11 +59,23 @@
             <param name="mesh"></param>
             <returns></returns>
         </member>
-        <member name="M:RayGraphics.Render.GpuInstanceRender.Draw">
+        <member name="M:RayGraphics.Render.GpuInstanceRender.Render">
             <summary>
             绘制
             </summary>
             <returns></returns>
+        </member>
+        <member name="M:RayGraphics.Render.GpuInstanceRender.UpdateInstancedData(System.Collections.Generic.List{UnityEngine.Matrix4x4},UnityEngine.MaterialPropertyBlock)">
+            <summary>
+            更新数据
+            </summary>
+        </member>
+        <member name="M:RayGraphics.Render.GpuInstanceRender.UpdateInstancedData(UnityEngine.Matrix4x4,UnityEngine.MaterialPropertyBlock)">
+            <summary>
+            更新数据
+            </summary>
+            <param name="matrix"></param>
+            <param name="block"></param>
         </member>
         <member name="M:RayGraphics.Render.IRender.SetMaterial(UnityEngine.Material)">
             <summary>
@@ -76,11 +98,21 @@
             <param name="mesh"></param>
             <returns></returns>
         </member>
-        <member name="M:RayGraphics.Render.IRender.Draw">
+        <member name="M:RayGraphics.Render.IRender.Render">
             <summary>
-            绘制
+            渲染
             </summary>
             <returns></returns>
+        </member>
+        <member name="M:RayGraphics.Render.IRender.UpdateInstancedData(UnityEngine.Matrix4x4,UnityEngine.MaterialPropertyBlock)">
+            <summary>
+            更新数据
+            </summary>
+        </member>
+        <member name="M:RayGraphics.Render.IRender.UpdateInstancedData(System.Collections.Generic.List{UnityEngine.Matrix4x4},UnityEngine.MaterialPropertyBlock)">
+            <summary>
+            更新数据
+            </summary>
         </member>
         <member name="T:RayGraphics.Render.NormalRender">
             <summary>
@@ -116,11 +148,23 @@
             <param name="mesh"></param>
             <returns></returns>
         </member>
-        <member name="M:RayGraphics.Render.NormalRender.Draw">
+        <member name="M:RayGraphics.Render.NormalRender.Render">
             <summary>
             绘制
             </summary>
             <returns></returns>
+        </member>
+        <member name="M:RayGraphics.Render.NormalRender.UpdateInstancedData(UnityEngine.Matrix4x4,UnityEngine.MaterialPropertyBlock)">
+            <summary>
+            更新数据
+            </summary>
+            <param name="matrix"></param>
+            <param name="block"></param>
+        </member>
+        <member name="M:RayGraphics.Render.NormalRender.UpdateInstancedData(System.Collections.Generic.List{UnityEngine.Matrix4x4},UnityEngine.MaterialPropertyBlock)">
+            <summary>
+            更新数据
+            </summary>
         </member>
         <member name="M:RayGraphics.Render.RenderManger.AddRender(RayGraphics.Render.IRender)">
             <summary>
@@ -170,11 +214,23 @@
             <param name="mesh"></param>
             <returns></returns>
         </member>
-        <member name="M:RayGraphics.Render.SameMaterialRender.Draw">
+        <member name="M:RayGraphics.Render.SameMaterialRender.Render">
             <summary>
             绘制
             </summary>
             <returns></returns>
+        </member>
+        <member name="M:RayGraphics.Render.SameMaterialRender.UpdateInstancedData(UnityEngine.Matrix4x4,UnityEngine.MaterialPropertyBlock)">
+            <summary>
+            更新数据
+            </summary>
+            <param name="matrix"></param>
+            <param name="block"></param>
+        </member>
+        <member name="M:RayGraphics.Render.SameMaterialRender.UpdateInstancedData(System.Collections.Generic.List{UnityEngine.Matrix4x4},UnityEngine.MaterialPropertyBlock)">
+            <summary>
+            更新数据
+            </summary>
         </member>
         <member name="M:RayGraphics.Texture.GridTexture.CreateTexture(System.Int32,System.Int32)">
             <summary>

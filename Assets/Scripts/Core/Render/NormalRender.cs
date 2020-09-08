@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using System.Collections.Generic;
 namespace RayGraphics.Render
 {
     /// <summary>
@@ -54,13 +55,29 @@ namespace RayGraphics.Render
         /// 绘制
         /// </summary>
         /// <returns></returns>
-        public bool Draw()
+        public bool Render()
         {
             if (!m_targetMaterial || !m_targetMesh)
                 return false;
 
-            Graphics.DrawMesh(m_targetMesh, Vector3.zero, Quaternion.identity, m_targetMaterial, 0);
+            Graphics.DrawMesh(m_targetMesh, Matrix4x4.identity, m_targetMaterial, 0);
             return true;
+        }
+        /// <summary>
+        /// 更新数据
+        /// </summary>
+        /// <param name="matrix"></param>
+        /// <param name="block"></param>
+        public void UpdateInstancedData(Matrix4x4 matrix, MaterialPropertyBlock block)
+        {
+
+        }
+        /// <summary>
+        /// 更新数据
+        /// </summary>
+        public void UpdateInstancedData(List<Matrix4x4> matrixArray, MaterialPropertyBlock block)
+        {
+
         }
     }
 }

@@ -46,7 +46,7 @@ namespace RayGraphics.Render
             {
                 if (render != null)
                 {
-                    render.Draw();
+                    render.Render();
                 }
             }
         }
